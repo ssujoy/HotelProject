@@ -1,0 +1,124 @@
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>hotel-fortune bootstrap Design website | Home :: w3layouts</title>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'/>
+<link href='https://cdnjs.cloudflare.com/ajax/libs/jqgrid/4.6.0/css/ui.jqgrid.css' rel='stylesheet' type='text/css'/>
+<link href='http://fonts.googleapis.com/css?family=Pinyon+Script' rel='stylesheet' type='text/css'/>
+<link href='http://fonts.googleapis.com/css?family=Quicksand:400,700' rel='stylesheet' type='text/css'/>
+<link href="css/lib/bootstrap.css" rel='stylesheet' type='text/css'/>
+<link href="css/lib/jquery-ui.css" rel='stylesheet' type='text/css'/>
+<link href="css/lib/owl.carousel.css" rel='stylesheet' type='text/css'/>
+<link href="css/lib/JFFormStyle-1.css" rel='stylesheet' type='text/css'/>
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"></meta>
+<script src="js/lib/jquery.min.js"></script>
+<script src="js/lib/angular.min.js"></script>
+<script src="js/lib/angular-route.min.js"></script>
+<script src="js/lib/angular-cookies.min.js"></script>
+<script src="js/lib/angular-local-storage.min.js"></script>
+<script src="js/lib/bootbox.min.js"></script>
+<script src="js/lib/bootstrap.min.js"></script>
+<script src="js/lib/JFCore.js"></script>
+<script src="js/lib/JFForms.js"></script>
+<script src="js/lib/jquery.flexisel.js"></script>
+<script src="js/lib/jquery-ui.js"></script>
+<script src="js/lib/owl.carousel.js"></script>
+<script src="js/lib/responsiveslides.min.js"></script>
+<script src="js/app.js"></script>
+</head>
+<body ng-app="app" ng-controller="mainController">
+<!--header starts-->
+<div class="header">
+	 <div class="top-header">
+		 <div class="container">
+			 <div class="logo">
+				 	<a href="index.html"><img src="images/logo.png"/></a>
+			 </div>
+			 <span class="menu"> </span>
+			 <div class="m-clear"></div>
+			 <div class="top-menu">
+				<ul>
+					 <li class="active"><a href="#/">HOME</a></li>
+					 <li ng-hide="true"><a class="scroll" href="facilities.html">FACILITIES</a></li>
+					 <li><a class="scroll" href="#/hotels">HOTELS</a></li>
+					 <li ng-hide="true"><a class="scroll" href="conference.html">CONFERENCE</a></li>
+					 <li ng-hide="true"><a class="scroll" href="booking.html">BOOKING</a></li>
+					 <li><a class="scroll" href="#/contact">CONTACT US</a></li>
+				</ul>
+				<script>
+					$("span.menu").click(function(){
+						$(".top-menu ul").slideToggle(200);
+					});
+				</script>
+			 </div>
+			 <div class="clearfix"></div>
+		  </div>
+	  </div>
+</div>
+<div ng-view>hello</div> 
+<!---->
+<div class="fotter">
+	 <div class="container">
+		 <h3>143 City Located Hotels World Wide</h3>
+		 <h4>"Hospitality, Quality and Good Locations. We only provide you with the best hotels" - John Deo</h4>
+		 <i class="man"></i>
+	 </div>
+</div>
+<!---->
+<div class="fotter-info">
+	  <div class="container">
+	      <div class="col-md-5 details">
+			 <div class="hotel-info">
+				 <h4>ABOUT THIS HOTEL</h4>
+				 <p>Suspendisse erat mi, tincidunt sit amet massa quis, commodo fermentum diam. Sed nec dui nec nunc tempor interdum.</p>
+				 <p>Ut vulputate augue urna, ut porta dolor imperdiet a. Vestibulum nec leo eu magna aliquam ornare.</p>
+			 </div>
+			 <div class="news">
+				 <h4>LATEST NEWS</h4>
+				 <h5>Grand Hotel Joins DeluxelHotels</h5>
+				 <a href="#">15 AUG</a>
+				 <h5>Happy Chirstmas To Everyone</h5>
+				 <a href="#">15 AUG</a>
+				 <h5>Best Places To Visit 2014</h5>
+				 <a href="#">15 AUG</a>
+				 <h5>Various Offers</h5>
+				 <a href="#">15 AUG</a>		
+			 </div>
+				<div class="clearfix"></div>
+		 </div>
+		 <div class="col-md-7 details">
+			 <div class="join">
+				 <h4>JOIN DELUXEHOTELS</h4>
+				 <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus vestibulum blandit egestas. 
+				 Nam id lectus vel orci luctus consectetur eget id elit. In tortor odio, pellentesque eu arcu sit amet, lacinia euismod nisi. Aliquam sodales tristique mauris ac fermentum.
+				 Donec vel varius ipsum. Pellentesque vitae mollis massa. </p>
+				 <p>There is no costs or whatsoever so sign up today!</p>
+				 <a href="#">READ MORE</a>
+			 </div>
+			 <div class="member">
+			 <h4>MEMBERS AREA</h4>
+			 <form>
+			 <p>Username</p>
+			 <input type="text" ng-model="username" placeholder="" required="required" />
+			 <p>Password</p>
+			 <input type="password" ng-model="password" placeholder="" required="required" />		
+			 <input type="submit" ng-click="login()" value="LOGIN"/>
+			 </form>
+			 </div>
+			 <div class="clearfix"></div>
+		 </div>
+		 <div class="clearfix"></div>
+	  </div>
+	 <h6>Template by <a href="http://w3layouts.com/">W3layouts</a></h6>	  
+</div>
+<!---->
+
+</body>
+</html>
